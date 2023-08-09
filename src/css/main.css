@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/bg.png);
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  padding-left: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 70px;
+  max-height: 70px;
+  background-color: #000;
+  box-sizing: border-box;
+}
+header img {
+  height: auto;
+  width: auto;
+}
+header .menu {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+}
+header .line1, header .line2, header .line3 {
+  height: 6px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 7px;
+  background-color: #fff;
+}
+header .line2 {
+  width: 75%;
+  margin-left: auto;
+}
+header .line3 {
+  width: 50%;
+  margin-left: auto;
+}
+header nav .search {
+  display: flex;
+  justify-content: left;
+  border: none;
+  border-radius: 13px;
+  width: 320px;
+  height: 48px;
+  background-color: #232229;
+}
+header nav .search #submit {
+  flex: 1;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: transparent url(/public/search.png) no-repeat;
+  cursor: pointer;
+}
+header nav .search #search-input {
+  flex: 7;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+header nav a, header input {
+  display: block;
+  width: 300px;
+  margin: 0 2rem;
+  text-decoration: none;
+  color: #ccc;
+}
+header nav a:hover {
+  color: #fff;
+}
+header .nav-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: top;
+  opacity: 0.9;
+  gap: 1.5rem;
+  background-color: #000;
+  transition: 0.3s;
+  transform: translateY(-100vh);
+}
+header .nav-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+header .responsive_nav {
+  transform: none;
+}
+header .responsive_log {
+  transform: none;
+}
+
+.slider-show .slide {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-height: 600px;
+  background: url(../img/onair-slide.png);
+  background-size: 50% 100% no-repeat;
+  background-position: 70% 20%;
+}
+.slider-show .free-trial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 0 44px;
+  color: #fff;
+}
+.slider-show .free-trial button {
+  width: 174px;
+  border: none;
+  border-radius: 24px;
+  height: 48px;
+  color: #fff;
+  background-color: #E13C52;
+}
+.slider-show .swiper {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-show .swiper .swipe-left, .slider-show .swiper .swipe-right {
+  margin: 20px 50px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.slider-show .swiper .swipe-left::before {
+  content: "<";
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-show .swiper .swipe-right::before {
+  content: ">";
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-show .swiper .swipe-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  height: 5px;
+  width: 30%;
+}
+.slider-show .swiper .swipe-line .line {
+  height: 5px;
+  width: 20%;
+  background-color: #aaa;
+}
+
+.recomends, .new-channels, .films {
+  display: block;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+}
+
+footer {
+  padding: 15px;
+  background-color: #191919;
+  box-sizing: border-box;
+}
+footer .footer-item {
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #fff;
+  border-top: 1px solid #888;
+}
+footer .footer-item button {
+  float: right;
+  margin-left: auto;
+  background-color: transparent;
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  border: 2px solid #888;
+  border-radius: 50%;
+}
+footer .footer-logo {
+  width: 280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+footer .footer-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .download-app {
+  margin: 20px 0;
+}
+footer .social-network {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+}
+footer .social-network a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 2px solid #888;
+  border-radius: 50%;
+}
+footer > p {
+  margin-top: 20px;
+  color: #aaa;
+}/*# sourceMappingURL=main.css.map */

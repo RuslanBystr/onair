@@ -1,0 +1,266 @@
+$bg-header: #000;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../img/bg.png);
+}
+h2{
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+header{
+
+    display: flex;
+    padding: 10px;
+    padding-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 70px;
+    max-height: 70px;
+    background-color: $bg-header;
+    box-sizing: border-box;
+
+    img{
+        height: auto;
+        width: auto;
+    }
+    .menu{
+        height: 40px;
+        width: 40px;
+        border: none;
+        background-color: transparent;
+        margin-right: 10px;
+    }
+    .line1, .line2, .line3{
+        height: 6px;
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 7px;
+        background-color: #fff;
+    }
+    .line2{
+        width: 75%;
+        margin-left: auto;
+    }
+    .line3{
+        width: 50%;
+        margin-left: auto;
+    }
+    nav .search {
+        display: flex;
+        justify-content: left;
+        border: none;
+        border-radius: 13px;
+        width: 320px;
+        height: 48px;
+        background-color: #232229;
+    
+        #submit {
+            flex: 1;
+            width: 48px;
+            height: 48px;
+            border: none;
+            background: transparent url(/public/search.png) no-repeat;
+            cursor: pointer;
+        }
+    
+        #search-input {
+            flex: 7;
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+        }
+    }
+    
+    nav a, input{
+        display: block;
+        width: 300px;
+        margin: 0 2rem;
+        text-decoration: none;
+        color: #ccc;
+    }
+    nav a:hover{
+        color: #fff;
+    }
+    
+    .nav-btn{
+        background: transparent;
+        border: none;
+        color: #fff;
+        visibility: visible;
+        opacity: 1;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: top;
+        opacity: 0.9;
+        gap: 1.5rem;
+        background-color: #000;
+        transition: 0.3s;
+        transform: translateY(-100vh);
+
+   }
+   .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+   }
+   .responsive_nav{
+    transform: none;
+   }
+   .responsive_log{
+    transform: none;
+   }
+}
+.slider-show{
+    .slide{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        min-height: 600px;
+        background: url(../img/onair-slide.png);
+        background-size: 50% 100% no-repeat;
+        background-position: 70% 20%;
+    }
+    .free-trial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin: 0 44px;
+        color: #fff;
+        button{
+            width: 174px;
+            border: none;
+            border-radius: 24px;
+            height: 48px;
+            color: #fff;
+            background-color: #E13C52;
+        }
+    }
+    .swiper{
+        display: flex;
+        justify-content: space-between;
+
+        .swipe-left, .swipe-right{
+            margin: 20px 50px;
+            width: 30px;
+            height: 30px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        .swipe-left::before{
+            content: "\003C";
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        .swipe-right::before{
+            content: "\003E";
+            color: #fff;
+            display: flex;
+            align-items: center;    
+            justify-content: center; 
+        }
+        .swipe-line{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+            height: 5px;
+            width: 30%;
+
+            .line{
+                height: 5px;
+                width: 20%;
+                background-color: #aaa;
+            }
+        }
+    }
+
+}
+
+.recomends, .new-channels, .films{
+    display: block;
+    white-space: nowrap;
+    overflow: auto;
+
+}
+.games{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+}
+
+footer{
+    padding: 15px;
+    background-color: #191919;
+    box-sizing: border-box;
+    .footer-item{
+        padding: 15px 10px;
+        font-size: 16px;
+        color: #fff;
+        border-top: 1px solid #888;
+
+        button{
+            float: right;
+            margin-left: auto;
+            background-color: transparent;
+            height: 25px;
+            width: 25px;
+            color: #fff;
+            border: 2px solid #888;
+            border-radius: 50%;
+        }
+
+    }
+    .footer-logo{
+        width: 280px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .download-app{
+        margin: 20px 0;
+    }
+    .social-network{
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        a{  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: 2px solid #888;
+            border-radius: 50%;
+        }
+
+    }
+    >p{
+        margin-top: 20px;
+        color: #aaa;
+    }
+}
